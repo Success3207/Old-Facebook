@@ -1,0 +1,183 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 2px solid;
+    width: 40%;
+    height: 600px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.top{
+    font-size: 1.2rem;
+    background-color: lightpink;
+    border-bottom: 4px solid brown;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.face{
+    font-size: 2.5rem;
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    font-size: 1rem;
+    /* padding: 5px; */
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+.login{
+    width: 303px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: darkblue;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    text-decoration: dotted;
+}
+hr{
+    border-bottom: 1px solid gray;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.create{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(8, 189, 8);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+.create:hover{
+    background-color: green;
+}
+.eng{
+    color: gray;
+}
+.fran{
+    color: blue;
+}
+.esp{
+    color: blue;
+}
+
+
+@media(max-width:800px){
+    .input{
+        width: 300px;
+    }
+    hr{
+        width: 200px;
+    }
+    input{
+        width: 230px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    .login{
+        width: 235px;
+        font-size: 0.9rem;
+    }
+    .create{
+        width: 230px;
+        font-size: 0.9rem;
+
+    }
+    .eng, .fran, .esp{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:540px){
+    .container{
+        width: 400px;
+        height: 790px;
+    }
+    .top{
+        margin-top: 20px;
+    }
+    input{
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .login{
+        width: 300px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    .create{
+        width: 300px;
+        height: 40px;
+    }
+    .eng, .fran, .esp{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:330px){
+    .container{
+        width: 400px;
+    }
+    input{
+        width: 250px;
+        height: 35px;
+        font-size: 1rem;
+        padding: 0;
+    }
+    .login{
+        width: 250px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    .create{
+        width: 250px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+    .esp, .eng, .fran{
+        font-size: 0.8rem;
+    }
+
+}
